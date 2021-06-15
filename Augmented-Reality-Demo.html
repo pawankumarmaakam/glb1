@@ -13,24 +13,46 @@
 
   <div id="card">
     
-    <model-viewer src="Walking character.glb"
+    <model-viewer id="model"  
+                  src="Walking character.glb"
                   alt="MickeyMouse"
                   shadow-intensity="1"
                   camera-controls
                   animation-name="Animation 1" autoplay ar>
-<div class="btn-container">
-<button type="button">Animation 1</button>
-<button type="button">Animation 2</button>
-<button type="button">Animation 3</button>
-<button type="button">Animation 4</button>
-<button type="button">Animation 5</button>
- </div>
+
     </model-viewer>
 
-
+<div class="btn-container">
+<button type="button" onclick="ani1()">Animation 1</button>
+<button type="button" onclick="ani2()">Animation 2</button>
+<button type="button" onclick="ani3()">Animation 3</button>
+<button type="button" onclick="ani4()">Animation 4</button>
+<button type="button" onclick="ani5()">Animation 5</button>
+ </div>
 
   </div>
 
+ <script>
+var modelViewer =document.getElementById('model');
+
+function ani1(){
+modelViewer.animationName = 'Yawing';
+}
+
+function ani2(){
+modelViewer.animationName = 'Yawing';
+}
+function ani3(){
+modelViewer.animationName = 'Yawing';
+}
+function ani4(){
+modelViewer.animationName = 'Yawing';
+}
+function ani5(){
+modelViewer.animationName = 'Yawing';
+}
+
+ </script>
 
   <script type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
