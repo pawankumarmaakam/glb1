@@ -53,3 +53,27 @@ footer {
   font-style: italic;
   line-height: 1.5em;
 }
+
+.btn-container{
+
+position: absolute;
+bottom: 50px;
+width: 100%;
+text-align: center;
+}
+
+button{
+border: none;
+background: #edda73;
+height: 40px;
+width: 150px;
+margin: 5px 15 px;
+cursor: pointer;
+font-weight: bold;
+font-size: 16px;
+}
+
+button:focus{
+outline: none;
+}
+
