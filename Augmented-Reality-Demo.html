@@ -19,16 +19,16 @@
                   shadow-intensity="1"
                   camera-controls
                   animation-name="Animation 1" autoplay ar>
-
+<div class="btn-container">
+<button type="button" onclick="ani1()">idle</button>
+<button type="button" onclick="ani2()">walk</button>
+<button type="button" onclick="ani3()">run</button>
+<button type="button" onclick="ani4()">skipping</button>
+<button type="button" onclick="ani5()">jump</button>
+ </div>
     </model-viewer>
 
-<div class="btn-container">
-<button type="button" onclick="ani1()">Animation 1</button>
-<button type="button" onclick="ani2()">Animation 2</button>
-<button type="button" onclick="ani3()">Animation 3</button>
-<button type="button" onclick="ani4()">Animation 4</button>
-<button type="button" onclick="ani5()">Animation 5</button>
- </div>
+
 
   </div>
 
@@ -36,7 +36,7 @@
 var modelViewer =document.getElementById('model');
 
 function ani1(){
-modelViewer.animationName = 'idle';
+modelViewer.animationName ='idle';
 }
 
 function ani2(){
