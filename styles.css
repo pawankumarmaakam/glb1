@@ -3,8 +3,13 @@ body {
   padding: 0;
   font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
   color: #FFFAF0;
+  font-family: "Trirong", serif;
+  font-color:white;
+  background-image: ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 }
-
 
 #card1 {
   margin: 3em auto;
@@ -14,17 +19,6 @@ body {
   border-radius: 6px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
  overflow: hidden;
-}
-
-#card2 {
-  margin: 3em auto;
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  border-radius: 6px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
-
-  overflow: hidden;
 }
 
 model-viewer {
@@ -65,43 +59,37 @@ footer {
   line-height: 1.5em;
 }
 
-body {
-  font-family: "Trirong", serif;
-font-color:white;
- background-image: ;
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-
-
-
-.........................
 .btn-container{
   position: absolute;
-bottom: 50px;
-width: 100%;
-text-align: center;
-
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  }
+button{
+  border:none;	
+  background: #555555;	
+  height: 30px;	
+  width: 100px;
+  margin:25px 10px;	
+  cursor:pointer;
+  font-size: 16px;
+  color:white;
+  font-family: "Trirong", serif;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 5px #999;
 }
 
+button:hover{
+  background-color: Black;
+  border: 2px solid  black;
+  color: white;
+}
 
 button:focus{
 outline:none;
 }
-
-
-.button {
-  background-color: black;
-  color: white;
-border-radius: 100%;
-padding: 10px 50px;
-  border: 2px solid black;
-}
-
-.button:hover {
-  background-color: #555555;
-border: 2px solid  #555555;
-  color: white;
-}
-
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
