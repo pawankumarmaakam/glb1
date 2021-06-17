@@ -11,21 +11,31 @@
    </head> 
 
 <body background="woodenwall.png">
+<hr>
   <div id="card1">
-    <model-viewer id="model"  
+<model-viewer id="model"  
                   src="Walking character.glb"
                   alt="MickeyMouse"
                   shadow-intensity="1"
                   camera-controls
                   animation-name="Animation 1" autoplay ar>
 <div class="btn-container">
-<button class="button button5 type="button" onclick="ani1()">idle</button>
-<button class="button button5 type="button" onclick="ani2()">walk</button>
-<button class="button button5 type="button" onclick="ani3()">run</button>
-<button class="button button5 type="button" onclick="ani4()">skipping</button>
-<button class="button button5 type="button" onclick="ani5()">jump</button>
+<button type="button" onclick="ani1()">idle</button>
+<button type="button" onclick="ani2()">walk</button>
+<button type="button" onclick="ani3()">run</button>
+<button type="button" onclick="ani4()">skipping</button>
+<button type="button" onclick="ani5()">jump</button>
  </div>
     </model-viewer>
+<section class="attribution">
+      <span>
+        <h1>Mickey Mouse</h1>
+        <span>By Experience the Virtual and Augmented Character animations of Mickey Mouse.</span>
+<hr>
+      </span>
+         </section>
+
+
   </div>
 
  <div id="card2">
@@ -43,7 +53,17 @@
 <button class="button button5 type="button" onclick="ani5()">jump</button>
  </div>
     </model-viewer>
-  </div>
+<section class="attribution">
+      <span>
+        <h1>Mickey Mouse</h1>
+        <span>By Experience the Virtual and Augmented Character animations of Mickey Mouse.</span>
+<hr>
+      </span> 
+         </section>
+
+
+</div>
+
 
  <script>
 var modelViewer =document.getElementById('model');
@@ -74,5 +94,7 @@ modelViewer.animationName = 'jump';
   <script nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
   </script>
+<hr>
+<div style="text-align:right;padding:10px;margin-top:7px;font-family:Verdana;color:white ">-a page by pawan kumar maakam</div>
 </body>
 </html>
