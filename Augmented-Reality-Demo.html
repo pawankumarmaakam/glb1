@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
    </head> 
 
-<body>
-
-  <div id="card">
-    
+<body background="woodenwall.png">
+  <div id="card1">
     <model-viewer id="model"  
                   src="Walking character.glb"
                   alt="MickeyMouse"
@@ -20,16 +19,30 @@
                   camera-controls
                   animation-name="Animation 1" autoplay ar>
 <div class="btn-container">
-<button type="button" onclick="ani1()">idle</button>
-<button type="button" onclick="ani2()">walk</button>
-<button type="button" onclick="ani3()">run</button>
-<button type="button" onclick="ani4()">skipping</button>
-<button type="button" onclick="ani5()">jump</button>
+<button class="button button5 type="button" onclick="ani1()">idle</button>
+<button class="button button5 type="button" onclick="ani2()">walk</button>
+<button class="button button5 type="button" onclick="ani3()">run</button>
+<button class="button button5 type="button" onclick="ani4()">skipping</button>
+<button class="button button5 type="button" onclick="ani5()">jump</button>
  </div>
     </model-viewer>
+  </div>
 
-
-
+ <div id="card2">
+    <model-viewer id="model"  
+                  src="Walking character.glb"
+                  alt="MickeyMouse"
+                  shadow-intensity="1"
+                  camera-controls
+                  animation-name="Animation 1" autoplay ar>
+<div class="btn-container">
+<button class="button button5 type="button" onclick="ani1()">idle</button>
+<button class="button button5 type="button" onclick="ani2()">walk</button>
+<button class="button button5 type="button" onclick="ani3()">run</button>
+<button class="button button5 type="button" onclick="ani4()">skipping</button>
+<button class="button button5 type="button" onclick="ani5()">jump</button>
+ </div>
+    </model-viewer>
   </div>
 
  <script>
